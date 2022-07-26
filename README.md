@@ -67,7 +67,7 @@ xr_usb_serial_common_lnx-3.6-and-newer-pak/xr_usb_serial_common.c:2057:17: error
       |                 ^~~~~~~~~~~~~~
 ```
 
-These problems where solved by replacing `put_tty_driver` for `tty_driver_kref_put` and `alloc_tty_driver` by `tty_alloc_driver` and adding `-Wno-incompatible-pointer-types` to the compilation flags (yes, it would be better to real solve the error than just ignore it).
+These problems where solved by replacing `put_tty_driver` for `tty_driver_kref_put` and `alloc_tty_driver` by `tty_alloc_driver` and changing `xr_usb_serial_tty_write_room` and `xr_usb_serial_tty_chars_in_buffer`to return an `unsigned int` in place of an `int`.
 
 ## Installation
 
