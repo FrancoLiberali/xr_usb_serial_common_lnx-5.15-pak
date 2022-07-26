@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Update of Exar/MxL USB Serial Driver to support linux kernel 5.15.
+Update of Exar/MxL USB Serial Linux Driver than can be found in <https://www.maxlinear.com/product/interface/uarts/usb-uarts/xr21v1410> to support Linux kernel 5.15.
 
 Please star this repository if it has util for you :).
 
